@@ -25,5 +25,8 @@ curl http://user:user@localhost:8081/movies
 ## Get all movies with formatted duration
 curl http://user:user@localhost:8081/moviesformatted
 
-## Find movies title containing <pattern>
+## Find all movies with title containing pattern
 curl http://user:user@localhost:8081/movies/search/findByTitleContaining?pattern=Tower
+
+## Delete movie
+curl -X DELETE http://admin:admin@localhost:8081/movies/1
