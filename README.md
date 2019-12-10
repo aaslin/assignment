@@ -14,7 +14,7 @@ username:user password:user
 username:admin password:admin
 
 ## Populate with data
-curl -X POST -H "Content-Type:application/json" -d "{\"title\": \"Toy Story\",\"duration\": 81}" http://admin:admin@localhost:8081/movies
+curl -X POST -H "Content-Type:application/json" -d '{"title": "Toy Story","duration": 81}' http://admin:admin@localhost:8081/movies
 
 ## Or populate by running the script
 ./insert_test_data.sh
