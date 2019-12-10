@@ -1,29 +1,29 @@
 README
 ============
 
-* Build application
+## Build application
 mvn clean install
 
-* Run application
+## Run application
 mvn spring-boot:run
 
-* Read only user
+## Read only user
 username:user password:user
 
-* Read/Write user
+## Read/Write user
 username:admin password:admin
 
-* Populate with data
+## Populate with data
 curl -X POST -H "Content-Type:application/json" -d "{\"title\": \"Toy Story\",\"duration\": 81}" http://admin:admin@localhost:8081/movies
 
-* Or populate by running the script
+## Or populate by running the script
 ./insert_test_data.sh
 
-* Get all movies 
+## Get all movies 
 curl http://user:user@localhost:8081/movies
 
-* Get all movies with formatted duration
+## Get all movies with formatted duration
 curl http://user:user@localhost:8081/moviesformatted
 
-* Find movies title containing <pattern>
+## Find movies title containing <pattern>
 curl http://user:user@localhost:8081/movies/search/findByTitleContaining?pattern=Tower
